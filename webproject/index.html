@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="formu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/webfavi.png" sizes="32x32">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Sesion</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Registro</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <section class="forms-section">
+            <h1 class="section-title">Usario</h1>
+            <div class="forms">
+                <div class="form-wrapper is-active">
+                    <button type="button" class="switcher switcher-login">
+                        Iniciar Sesión
+                        <span class="underline"></span>
+                    </button>
+                    <form action="login.php" method="post" class="form form-login">
+                        <fieldset>
+                            <legend>Por favor, ingresa tu usuario y password para el acceso.</legend>
+                            <div class="input-block">
+                                <label id="icon" for="signup-user"><i class="icon-user"></i> Usuario</label>
+                                <input id="signup-user" type="text" name="usuario" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-password"><i class="icon-shield"></i> Password</label>
+                                <input id="signup-password" type="text" name="pass" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit" name="login" class="btn-login">Acceso</button>
+                    </form>
+                </div>
+                <div class="form-wrapper">
+                    <button type="button" class="switcher switcher-signup">
+                        Registrarse
+                        <span class="underline"></span>
+                    </button>
+                    <form action="registro.php" method="post" class="form form-signup">
+                        <fieldset>
+                            <legend>Por favor ingresa los datos para confirmar tu registro.</legend>
+                            <div class="input-block">
+                                <label id="icon" for="signup-user"><i class="icon-user"></i> Usuario</label>
+                                <input id="signup-user" type="text" name="usuario" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-name"><i class="icon-crop"></i> Nombre</label>
+                                <input id="signup-name" type="text" name="nombre" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-apellido"><i class="icon-star"></i> Apellido</label>
+                                <input id="signup-apellido" type="text" name="apellido" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-email"><i class="icon-envelope"></i> E-mail</label>
+                                <input id="signup-email" type="email" name="correo" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-telefono"><i class="icon-phone"></i> Telefono</label>
+                                <input id="signup-telefono" type="tel" maxlength="10" placeholder="10 digitos" name="telefono" pattern="{0-9}" required>
+                            </div>
+                            <div class="input-block">
+                                <label id="icon" for="signup-password"><i class="icon-shield"></i> Password</label>
+                                <input id="signup-password" type="password" maxlength="8" placeholder="máximo 8 caracteres" name="pass" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit" name="enviar" class="btn-signup">Continuar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="form.js"></script>
+    </div>
+</body>
+
+</html>
